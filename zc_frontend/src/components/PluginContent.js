@@ -2,9 +2,9 @@ import axios from 'axios'
 import { useContext, useEffect } from 'react'
 import { URLContext } from '../contexts/Url'
 import cheerio from 'cheerio'
-
 import styles from '../styles/PluginContent.module.css'
 import Welcome from './Welcome'
+import { MessageBookmark } from './MessageBookmark'
 
 export const PluginContent = () => {
   // const pluginUrl = '/apps/default';
@@ -72,12 +72,5 @@ export const PluginContent = () => {
     }
   }, [url])
 
-  return (
-    <>
-      <section className={styles.container}>
-        <div id="zc-plugin-root">Loading...</div>
-      </section>
-      {!url && <Welcome />}
-    </>
-  )
+  return <>{!url && <Welcome />}</>
 }

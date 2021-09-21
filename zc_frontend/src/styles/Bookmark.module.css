@@ -1,0 +1,39 @@
+.messageContent {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.message:hover {
+  background-color: #f3f3f3;
+}
+
+.options {
+  visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -20px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 6px 6px 12px rgba(147, 161, 173, 0.2);
+}
+
+.message:hover .options {
+  visibility: visible;
+}
+
+.messageH1 {
+  font-weight: bold;
+}
